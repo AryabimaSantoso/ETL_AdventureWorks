@@ -5,8 +5,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-STAGING_DSN = os.getenv("STAGING_DSN", "postgresql+psycopg2://postgres:Mignon210905@localhost:5432/staging")
-WAREHOUSE_DSN = os.getenv("WAREHOUSE_DSN", "postgresql+psycopg2://postgres:Mignon210905@localhost:5432/dw_adventureworks")
+STAGING_DSN = os.getenv("STAGING_DSN", "postgresql+psycopg2://postgres:password@localhost:5432/staging")
+WAREHOUSE_DSN = os.getenv("WAREHOUSE_DSN", "postgresql+psycopg2://postgres:password@localhost:5432/dw_adventureworks")
 
 engine_staging = create_engine(STAGING_DSN)
 engine_dw = create_engine(WAREHOUSE_DSN)
