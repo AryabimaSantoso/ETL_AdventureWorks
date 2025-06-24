@@ -8,13 +8,13 @@ load_dotenv()
 # Koneksi ke database sumber OLTP
 SOURCE_DSN = os.getenv(
     "SOURCE_DSN",
-    "postgresql+psycopg2://postgres:Mignon210905@localhost:5432/adventureworks"
+    "postgresql+psycopg2://postgres:password@localhost:5432/adventureworks"
 )
 
 # Koneksi ke database staging PostgreSQL
 STAGING_DSN = os.getenv(
     "STAGING_DSN",
-    "postgresql+psycopg2://postgres:Mignon210905@localhost:5432/staging"
+    "postgresql+psycopg2://postgres:password@localhost:5432/staging"
 )
 
 engine_src = create_engine(SOURCE_DSN)
