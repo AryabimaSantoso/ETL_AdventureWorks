@@ -7,7 +7,7 @@ load_dotenv()
 
 STAGING_DSN = os.getenv(
     "STAGING_DSN",
-    "postgresql+psycopg2://postgres:Mignon210905@localhost:5432/staging"
+    "postgresql+psycopg2://postgres:password@localhost:5432/staging"
 )
 
 engine = create_engine(STAGING_DSN)
